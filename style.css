@@ -1,0 +1,702 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+/***********Body properties***********/
+body{
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+/***********whole header properties***********/
+header{
+  padding: .5rem 1.3rem;
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+  width: 100%;
+  transition: top 0.3s ease;
+}
+
+.head-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 a{
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  color: rgb(141, 13, 56);
+  font-weight: 699;
+  padding: 5px 0;
+  text-decoration: none;
+}
+
+.logo h1 a:hover{
+  cursor: pointer;
+}
+
+.navigation a{
+  margin-left: 25px;
+  font-size: 1.1em;
+  font-weight: 599;
+  color: rgb(141, 13, 56);
+  text-decoration: none;
+}
+
+.navigation a:hover{
+  cursor: pointer;
+  border-bottom: solid;
+  border-color: black;
+  transition: 1s ease-out;
+}
+
+.navigation .button{
+  color: #fff;
+  border: 2px none;
+  background-color: rgb(3, 16, 24);
+  padding: 5px 15px;
+  border-radius: 30px;
+  transition: .5s;
+}
+
+.navigation .button:hover{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+li{
+  list-style: none;
+}
+
+.togglenav{
+  display: none;
+}
+
+.checkbtn{
+  color: rgb(141, 13, 56);
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 50px;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+.dropdown{
+  display: none;
+}
+
+.dropdown li a{
+  color:#111;
+  display: none;
+}
+
+/***********Whole footer section properties***********/
+footer{
+  background-color: #111;
+}
+
+.footerContainer{
+  width: 100%;
+  padding: 30px;
+  background-color: rgb(3, 16, 24);
+}
+
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: .9;
+}
+
+.socialIcons a:hover{
+  background-color: #111;
+  transition: 0.5;
+}
+
+.socialIcons a:hover i{
+  background-color: #111;
+  transition: 0.5;
+}
+
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerNav ul li a{
+  color: #fff;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: .8;
+  transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+
+.bottom{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.1rem;
+  background-color: #111;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.644);
+}
+
+.bottom p{
+  color: rgb(141, 13, 56);
+}
+.bottom span{
+  color: white;
+  font-weight: 500;
+  margin: 0 5px;
+  text-transform: uppercase;
+}
+
+/******************************************************************************/
+/***********Main content section1 properties***********/
+.content{
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.content:hover{
+  transition: .3s ease-out;
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+.content-item{
+  text-align: center;
+}
+
+.content h2{
+  font-size: 100px;
+  font-weight: 600;
+  color: rgb(3, 16, 24);
+  transition: .5s ease-out;
+}
+
+.content h2:hover{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+.content-item a{
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  color: #ffffff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 14px 69px;
+  margin: 20px;
+  transition: 0.5s;
+}
+
+.content-item a:hover{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+/***********Background vid section1 properties***********/
+.video{
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+
+/***********Main content section2 properties***********/
+.section-2{
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.container{
+  max-width: 100%;
+  margin: 0;
+}
+
+.content-2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  flex-wrap: wrap;
+  flex: 1 1 21rem;
+  margin: 15px 5px ;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.644);
+  align-self: normal;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 80px;
+  border-radius: 20px;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+h4{
+  padding: 10px;
+  z-index: 1;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 10px;
+  background-color: rgb(3, 16, 24);
+  color: #fff;
+  backdrop-filter: blur(30px);
+  border-radius: 30px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+ h4:hover{
+  -webkit-text-stroke: 2px rgb(141, 13, 56);
+  color: transparent;
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/images6/Free-download-Dark-Blue-Background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+
+/***********Main content section3 properties***********/
+.content-3{
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+}
+
+.content-3-item{  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+h3{
+  color: rgb(141, 13, 56);
+  font-size: 3.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.content-3-item span{
+  color: black;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.content-3 img{
+  max-width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.644);
+  border-radius: 20px;
+}
+
+/***********************************About html*****************************************/
+.about-section{
+  margin: 0;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+.container-about{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0  40px 40px 40px;
+}
+
+.container-about h2{
+  font-size: 3em;
+  font-weight: bolder;
+  color: rgb(3, 16, 24);
+  border-bottom: 3px solid #222;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.services{
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.644);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.map-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/***********************************womens html*****************************************/
+
+/***********************************mens html*****************************************/
+
+/***********************************signup html*****************************************/
+.form-section{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: rgb(3, 16, 24);;
+}
+
+.form-section h1{
+  font-size: 3em;
+  font-weight: bolder;
+  color: rgb(3, 16, 24);
+  border-bottom: 3px solid #222;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+form{
+  margin: 50px 0;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.644);
+  padding: 1.2rem;
+  background-color: #fff;
+}
+
+input{
+  display: block;
+  width: 350px;
+  height: 40px;
+  margin: 20px;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.644);
+  font-size: 20px;
+  background: transparent;
+  outline: none;
+}
+
+.form-section button{
+  width: 350px;
+  height: 40px;
+  font-size: 20px;
+  color: #fff;
+  border: 2px none;
+  background-color: rgb(3, 16, 24);
+  padding: 5px 15px;
+  border-radius: 30px;
+  transition: .5s;
+}
+
+.form-section button:hover{
+  cursor: pointer;
+  color: rgb(141, 13, 56);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.644);
+}
+
+.location{
+  cursor: pointer;
+}
+
+::placeholder{
+  color: black;
+  opacity: .69;
+  font-size: 16px;
+}
+
+.details-membership{
+  text-align: center;
+  padding: 1.2rem;
+  margin: 15px;
+  text-align: center;
+}
+
+.details-membership h1{
+  font-size: 3em;
+  font-weight: bolder;
+  color: rgb(3, 16, 24);
+  border-bottom: 3px solid #222;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.details-membership span{
+  color: black;
+  font-size: 1.4rem;
+  margin: 20px 2px;
+}
+
+/***********************************gallery html*****************************************/
+.gallery-section{
+  margin: 0;
+  max-width: 100%;
+  min-height: 100vh;
+}
+.container-gallery{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0  40px 40px 40px;
+}
+
+.container-gallery h2{
+  font-size: 3em;
+  font-weight: bolder;
+  color: rgb(3, 16, 24);
+  border-bottom: 3px solid #222;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.container-gallery .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container-gallery .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container-gallery .box .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+/***********OVERALL MEDIA RESPONSIVENESS properties***********/
+@media (max-width: 992px) {
+  *{
+    -webkit-tap-highlight-color: transparent;
+   }
+
+  /*header*/
+  .navigation a{
+    display: none;
+  }
+
+  .toggle-btn{
+    color: rgb(141, 13, 56);
+    cursor: pointer;
+    font-size: 2rem;
+    display: block;
+  }
+
+ /*******toggle button******/
+ .togglenav{
+    display: block;
+  }
+
+  .checkbtn{
+    display: block;
+  }
+
+  .dropdown{
+    position: fixed;
+    width: 100%;
+    top: 80%;
+    left: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    padding-top: 1.5rem;
+    margin: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: rgb(3, 16, 24);
+    backdrop-filter: blur(50px);
+    transition: 1s ease-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.644);
+  }
+
+  .dropdown li a{
+    padding: 1.3rem;
+    font-size: 1.3em;
+    font-weight: 599;
+    color: rgb(141, 13, 56);
+  }
+
+  .dropdown .button{
+    color: floralwhite;
+    border: 2px solid;
+    padding: 1.1rem;
+    border-radius: 30px;
+    transition: .5s;
+  }
+
+  .dropdown .button:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+  }
+
+  .dropdown li a:hover{
+    transition: 1s ease-out;
+    color: floralwhite;
+  }
+
+  #check:checked ~ .dropdown{
+    display: block;
+  }
+
+  #check:checked ~ .dropdown li a{
+    display: block;
+  }
+
+  /*footer*/
+  .footerNav ul{
+    flex-direction: column;
+  }
+
+  .footerNav ul li{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+
+  /*******Index*******/
+  /*Body section1*/
+  .video{
+    height: 100vh;
+    min-width: 100%;
+  }
+
+  .content h2{
+    font-size: 100px;
+    font-weight: 699;
+  }
+
+  .content-item a{
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 10px 65px;
+    margin: 20px;
+  }
+
+  /*Body section2*/
+  
+  
+  /*Body section3*/  
+  .content-3-item{  
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .text{
+    width: 100%;
+    text-align: center;
+  }
+
+  h3{
+    font-size: 2rem;
+  }
+
+  /*******Gallery*******/
+  .container-gallery .box{
+    flex-direction: column;
+  }
+
+  .container-gallery .box .dream{
+    width: 100%;
+  }
+
+  .container-gallery{
+    margin: 0 5px;
+  }
+
+  /********about********/
+  .working-hours {
+    margin: 10px;
+  }
+  
+  table {
+    font-size: 14px;
+  }
+  
+  .map-section iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
